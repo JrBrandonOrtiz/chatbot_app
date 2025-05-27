@@ -7,15 +7,17 @@ import MessageInput from './MessageInput';
 const ChatBox = () => {
   const [messages, setMessages] = useState<Message[]>([]);
 
-  const fetchMessages = async () => {
-    const res = await axios.get('http://localhost:4000/api/messages');
-    setMessages(res.data);
-  };
+const API_URL = process.env.REACT_APP_API_URL;
 
-  const sendMessage = async (content: string) => {
-    await axios.post('http://localhost:4000/api/messages', { content });
-    fetchMessages();
-  };
+const fetchMessages = async () => {
+  const res = await axios.get(`${API_URL}/api/messages`);
+  setMessages(res.data);
+};
+
+const sendMessage = async (content: string) => {
+  await axios.post(`${API_URL}/api/messages`, { content });
+  fetchMessages();
+};
 
   useEffect(() => {
     fetchMessages();
