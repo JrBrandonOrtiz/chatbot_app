@@ -23,6 +23,7 @@ const sendMessage = async (content: string) => {
     fetchMessages();
   }, []);
 
+  
   return (
     <div style={{
       maxWidth: '500px',
