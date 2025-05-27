@@ -4,6 +4,8 @@ import { Message } from '../types/message';
 import MessageList from './MessageList';
 import MessageInput from './MessageInput';
 
+
+
 const ChatBox = () => {
   const [messages, setMessages] = useState<Message[]>([]);
 
@@ -23,7 +25,7 @@ const sendMessage = async (content: string) => {
     fetchMessages();
   }, []);
 
-  
+
   return (
     <div style={{
       maxWidth: '500px',
