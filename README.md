@@ -45,25 +45,26 @@ cd chatbot_app
 
 Configurar el Backend
 
-cd backend
-Crear archivo .env con:
-DB_HOST=centerbeam.proxy.rlwy.net
-DB_PORT=29524
-DB_USER=root
-DB_PASSWORD=
-DB_NAME=railway
-OPENAI_API_KEY=
+- cd backend
+- - Crear archivo .env con sus credenciales:
+- DB_HOST=centerbeam.proxy.rlwy.net
+- DB_PORT=29524
+- DB_USER=root
+- DB_PASSWORD=
+- DB_NAME=railway
+- OPENAI_API_KEY=
 
-npm install
-npm run dev
+- npm install
+- npm run dev
 
 Configurar el Frontend
 
-cd ../frontend
-Crear archivo .env con:
-REACT_APP_API_URL=https://chatbot-backend-cznd.onrender.com
-npm install
-npm run dev
+- cd ../frontend
+- - Crear archivo .env con:
+- REACT_APP_API_URL=https://chatbot-backend-cznd.onrender.com
+
+- npm install
+- npm run dev
 
 Rutas Disponibles
 - POST /chat: Enviar un mensaje al chatbot.
