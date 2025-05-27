@@ -32,6 +32,10 @@ Decisiones Técnicas
 - Base de Datos Relacional: MySQL por su robustez y familiaridad.
 - Despliegue en la Nube: aprovechando las fortalezas de Vercel, Render y Railway.
 
+Ya que el chatbot se encuentra en la nube, se deben realizar los cambios pertinentes
+de puertos si se requiere un manejo local, este es el link donde se puede probar el chatbot:
+https://chatbot-app-three-topaz.vercel.app/
+
 Cómo ejecutar el proyecto localmente:
 
 Requisitos Previos
